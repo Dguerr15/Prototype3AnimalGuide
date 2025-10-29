@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://daubchu4v5e8g"]
+
+[ext_resource type="Script" uid="uid://m35d8qsnhl7" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://by6ivcaw0t6t1" path="res://download.png" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://sjxdrt58o1os" path="res://animal.tscn" id="3_lquwl"]
+
+[node name="Scene1Node" type="Node2D"]
+script = ExtResource("1_h2yge")
+
+[node name="MazeNode" type="Node2D" parent="."]
+
+[node name="Maze" type="Sprite2D" parent="MazeNode"]
+scale = Vector2(214.84454, 194.92761)
+texture = ExtResource("2_1bvp3")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_lquwl")]
