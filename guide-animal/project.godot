@@ -11,6 +11,10 @@ config_version=5
 [application]
 
 config/name="GuideAnimal"
-run/main_scene="uid://dhyjmaelbl4gw"
+run/main_scene="uid://daubchu4v5e8g"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+camera/depth_of_field/depth_of_field_bokeh_quality=2

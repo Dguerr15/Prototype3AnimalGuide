@@ -1,6 +1,14 @@
 extends Node2D
 const CarrotScene = preload("res://carrot.tscn")
 const AnimalScene = preload("res://animal.gd")
+@onready var camera = $Camera2D 
+
+func _ready() -> void:
+	if camera:
+		print("found camera")
+		camera.make_current()
+	else:
+		print("no camera found")
 
 
 

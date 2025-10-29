@@ -10,7 +10,13 @@ script = ExtResource("1_h2yge")
 [node name="MazeNode" type="Node2D" parent="."]
 
 [node name="Maze" type="Sprite2D" parent="MazeNode"]
-scale = Vector2(214.84454, 194.92761)
+position = Vector2(1344, -768)
+scale = Vector2(232.9968, 211.71518)
 texture = ExtResource("2_1bvp3")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_lquwl")]
+position = Vector2(-1820, 518)
+scale = Vector2(2.495, 2.495)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.019, 0.019)

@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 const SPEED = 100.0 
+const RADIUS = 250.0
 var target_position = Vector2.ZERO 
 func _ready():
 	target_position = global_position 
@@ -20,7 +21,8 @@ func _physics_process(delta):
 			#velocity = Vector2.ZERO 
 			#move_and_slide()
 			#return # Exit early after eating
-
+	else:
+		target_position = global_position
 	
 	var direction = (target_position - global_position).normalized()
 	
@@ -35,9 +37,10 @@ func find_nearest_carrot():
 	
 	for child in parent.get_children():
 		if child.get_scene_file_path() == "res://carrot.tscn":
-			carrots.append(child)
+			var carrot_distance = global_position.distance_to(child.global_position)
+			if carrot_distance <= RADIUS:
+				carrots.append(child)
 			
-	# If no carrots are found, return null
 	if carrots.is_empty():
 		return null
 
