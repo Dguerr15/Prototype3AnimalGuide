@@ -360,3 +360,10 @@ scale = Vector2(1, 1.855)
 position = Vector2(-152, 99.000015)
 rotation = 3.1415927
 scale = Vector2(1, 1.855)
+
+[node name="Label" type="Label" parent="."]
+offset_left = -62.0
+offset_top = -228.0
+offset_right = 7.0
+offset_bottom = -204.0
+text = "time: 60"

@@ -1,10 +1,14 @@
 extends Node2D
 const CarrotScene = preload("res://carrot.tscn")
 @onready var camera := $Camera2D
+@onready var time_display = $Label
 
 func _ready() -> void:
+	get_tree().paused = false
 	if camera:
 		camera.make_current()
+	if GlobalTimer and time_display:
+		GlobalTimer.set_timer_label(time_display)
 
 func place_carrot(world_pos: Vector2) -> void:
 	var c := CarrotScene.instantiate()
