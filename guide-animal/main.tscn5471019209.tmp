@@ -16,7 +16,7 @@ position = Vector2(18736.002, -5751)
 scale = Vector2(2.495, 2.495)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(86.572754, 20.841553)
+position = Vector2(-7509.42, 2305.0103)
 scale = Vector2(0.40080163, 0.40080163)
 zoom = Vector2(0.019, 0.019)
 

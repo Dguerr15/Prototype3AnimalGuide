@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 1000.0 
+const SPEED = 2500.0 
 const RADIUS = 25000.0
 var target_position = Vector2.ZERO 
 func _ready():
@@ -12,7 +12,7 @@ func _physics_process(delta):
 	if nearest_carrot != null:
 		target_position = nearest_carrot.global_position
 		
-		if global_position.distance_to(target_position) < 10: # Distance check (10 pixels tolerance)
+		if global_position.distance_to(target_position) < 100: # Distance check (10 pixels tolerance)
 			# Remove the carrot from the game world
 			nearest_carrot.queue_free() 
 			# Reset target to prevent jittering or immediately picking a new one too fast
