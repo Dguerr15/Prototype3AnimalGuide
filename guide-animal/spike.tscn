@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d066dmbd23s8g"]
+
+[ext_resource type="Script" uid="uid://cwviw5lunqscr" path="res://spike.gd" id="1_7k7bx"]
+[ext_resource type="Texture2D" uid="uid://dy5bv0qdtpe8w" path="res://Assets/spike.png" id="2_tggh8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5sso0"]
+size = Vector2(214.2857, 600)
+
+[node name="SpikeInsant" type="Area2D" groups=["spikes"]]
+modulate = Color(0.7176471, 0.5411765, 0.3882353, 1)
+script = ExtResource("1_7k7bx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.028, 0.02)
+shape = SubResource("RectangleShape2D_5sso0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.3841858e-07, -1)
+scale = Vector2(0.028, 0.02)
+texture = ExtResource("2_tggh8")
