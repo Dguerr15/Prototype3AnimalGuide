@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b37f421hqemmj"]
 
-[ext_resource type="Texture2D" uid="uid://bp5kab2p1ogo6" path="res://carrot.png" id="1_1sbab"]
+[ext_resource type="Texture2D" uid="uid://bp5kab2p1ogo6" path="res://Assets/carrot.png" id="1_1sbab"]
 
 [node name="Carrot" type="Node2D"]
 

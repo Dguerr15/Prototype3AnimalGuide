@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://sjxdrt58o1os"]
 
 [ext_resource type="Script" uid="uid://bwv6527lydlnk" path="res://animal.gd" id="1_23vr7"]
-[ext_resource type="Texture2D" uid="uid://bhvu53uuofdi" path="res://sprite_placeholder.png" id="2_ifcgm"]
+[ext_resource type="Texture2D" uid="uid://bhvu53uuofdi" path="res://Assets/sprite_placeholder.png" id="2_ifcgm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_23vr7"]
 

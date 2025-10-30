@@ -13,8 +13,16 @@ config_version=5
 config/name="GuideAnimal"
 run/main_scene="uid://daubchu4v5e8g"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Assets/icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/sprout_lands_tilemap/plugin.cfg")
 
 [rendering]
 
 camera/depth_of_field/depth_of_field_bokeh_quality=2
+
+[sprout_lands_tilemap]
+
+disable_plugin_dialogues=true
