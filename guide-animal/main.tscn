@@ -9,7 +9,6 @@
 script = ExtResource("1_h2yge")
 
 [node name="MazeNode" type="Node2D" parent="."]
-visible = false
 
 [node name="Maze" type="Sprite2D" parent="MazeNode"]
 position = Vector2(1344, -768)
