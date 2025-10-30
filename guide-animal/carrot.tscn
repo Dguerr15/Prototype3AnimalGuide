@@ -5,5 +5,6 @@
 [node name="Carrot" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(5, 5)
+position = Vector2(-5.9604645e-08, 0)
+scale = Vector2(0.056249995, 0.055468824)
 texture = ExtResource("1_1sbab")
