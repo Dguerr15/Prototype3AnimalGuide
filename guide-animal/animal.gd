@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 250.0  # Reduced for better control
-const RADIUS = 25000.0
+const SPEED = 75.0  # Reduced for better control
+const RADIUS = 150.0
 
 @onready var navigation_agent = $NavigationAgent2D
 
