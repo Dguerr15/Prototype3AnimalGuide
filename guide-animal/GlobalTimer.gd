@@ -3,6 +3,7 @@ extends Node
 # Reference the Timer node as a variable
 @onready var timer = $Timer
 var timer_label: Label = null
+var carrots_placed: int = 0
 
 # The function that runs when the Timer hits 0
 func _on_timer_timeout():
@@ -38,3 +39,19 @@ func restart_timer():
 	# You might need to change this if your start time is different
 	timer.wait_time = 60.0 
 	timer.start()
+
+func Timercarrot():
+	carrots_placed += 1
+	var new_time_remaining = timer.time_left - 1.0 # Deduct 1 second
+	# Check if we have time to deduct before deducting
+	if new_time_remaining <= 0.0:
+		timer.stop() # Stop the timer
+		_on_timer_timeout() # Trigger Game Over immediately
+		return
+	timer.stop()
+	timer.wait_time = new_time_remaining
+	timer.start()
+	_process(0)
+	
+	# Debug message to confirm
+	print("Carrots Placed: ", carrots_placed, " | New Time Left: ", timer.time_left)

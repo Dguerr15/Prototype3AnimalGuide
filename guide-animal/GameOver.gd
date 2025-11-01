@@ -12,7 +12,5 @@ func _on_restart_button_pressed():
 		GlobalTimer.restart_timer()
 		
 	var main_scene = load("res://main.tscn")
-	
-	
 	# Reload the main game scene
 	get_tree().change_scene_to_packed(main_scene)

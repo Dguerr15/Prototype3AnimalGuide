@@ -266,10 +266,6 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(67.840004, 141.22667, -
 [node name="Scene1Node" type="Node2D"]
 script = ExtResource("1_h2yge")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(34, -75.00001)
-zoom = Vector2(1.5, 1.5)
-
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_272bh")
 
@@ -295,6 +291,17 @@ position = Vector2(-205, -144)
 scale = Vector2(2.495, 2.495)
 
 [node name="NavigationAgent2D2" type="NavigationAgent2D" parent="CharacterBody2D"]
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+scale = Vector2(0.40080163, 0.40080163)
+zoom = Vector2(4, 4)
+
+[node name="Label" type="Label" parent="CharacterBody2D/Camera2D"]
+offset_left = 68.0
+offset_top = -77.0
+offset_right = 137.0
+offset_bottom = -53.0
+text = "time: 60"
 
 [node name="FinishArea" parent="." instance=ExtResource("4_1bvp3")]
 position = Vector2(372, -186)
@@ -359,10 +366,3 @@ scale = Vector2(1, 1.855)
 position = Vector2(-152, 99.000015)
 rotation = 3.1415927
 scale = Vector2(1, 1.855)
-
-[node name="Label" type="Label" parent="."]
-offset_left = -62.0
-offset_top = -228.0
-offset_right = 7.0
-offset_bottom = -204.0
-text = "time: 60"

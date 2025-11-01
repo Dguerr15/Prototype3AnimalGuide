@@ -1,8 +1,14 @@
-[gd_scene format=3 uid="uid://d18qweo10h122"]
+[gd_scene load_steps=2 format=3 uid="uid://d18qweo10h122"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" uid="uid://b8lxll66tu3mm" path="res://GameOver.gd" id="1_sug1e"]
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_sug1e")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
 offset_left = 129.0
 offset_top = 242.0
 offset_right = 1051.0
@@ -11,3 +17,13 @@ theme_override_font_sizes/normal_font_size = 70
 text = "Congratulations, you won!"
 fit_content = true
 structured_text_bidi_override_options = [null]
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 443.0
+offset_top = 405.0
+offset_right = 666.0
+offset_bottom = 473.0
+text = "RESTART"
+
+[connection signal="pressed" from="Button" to="." method="_on_restart_button_pressed"]
