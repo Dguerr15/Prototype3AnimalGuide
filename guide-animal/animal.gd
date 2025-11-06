@@ -18,7 +18,7 @@ func _ready():
 	# Configure navigation agent
 	navigation_agent.path_desired_distance = 4.0
 	navigation_agent.target_desired_distance = 10.0
-	navigation_agent.debug_enabled = true  # Visualize path in editor
+	#$navigation_agent.debug_enabled = true  # Visualize path in editor
 
 func _physics_process(delta):
 	nearest_carrot = find_nearest_carrot()
@@ -72,7 +72,7 @@ func find_nearest_carrot():
 			closest_carrot = carrot
 			
 	return closest_carrot
-
+   
 # Debug function to see what's happening
 func _process(delta):
 	if nearest_carrot != null and navigation_agent != null:
